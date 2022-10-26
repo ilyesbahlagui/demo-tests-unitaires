@@ -69,7 +69,7 @@ public class Maison {
 			}
 			return superficieEtage;
 		}
-		
+
 		return superficieEtage;
 	}
 
@@ -82,21 +82,20 @@ public class Maison {
 	public double superficieTypePiece(String typePiece) {
 		double superficie = 0;
 //			System.out.println(typePiece);
-		if (typePiece!=null) {
-			
-			typePiece=typePiece.trim();
-			for (int i = 0; i < pieces.length;i++) {
+		if (typePiece != null) {
+
+			typePiece = typePiece.trim();
+			for (int i = 0; i < pieces.length; i++) {
 				if (typePiece.equals(this.pieces[i].getType())) {
 					superficie = superficie + this.pieces[i].getSuperficie();
 				}
-				
+
+			}
 		}
-		}
-	
-			System.out.println(superficie);
-			return superficie;
-	
-	
+
+		System.out.println(superficie);
+		return superficie;
+
 	}
 
 	/**

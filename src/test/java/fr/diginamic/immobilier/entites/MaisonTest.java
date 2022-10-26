@@ -1,3 +1,4 @@
+package fr.diginamic.immobilier.entites;
 import static org.junit.Assert.assertEquals;
 
 
